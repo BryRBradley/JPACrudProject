@@ -37,8 +37,8 @@ public class SnackController {
 
 	@PostMapping("addSnack.do")
 	public String addSnack(@RequestParam("name") String name, @RequestParam("calories") Integer calories,
-			@RequestParam("sugar_grams") Integer sugar, @RequestParam("protein_grams") Integer protein,
-			@RequestParam("carbs_grams") Integer carbs, @RequestParam("price") double price, Model model) {
+			@RequestParam("sugar") Integer sugar, @RequestParam("protein") Integer protein,
+			@RequestParam("carbs") Integer carbs, @RequestParam("price") double price, Model model) {
 
 		Snack snack = new Snack();
 		snack.setName(name);
@@ -56,7 +56,7 @@ public class SnackController {
 	@PostMapping("updateSnack.do")
 	public String updateSnack(@RequestParam("id") Integer id, @ModelAttribute("snack") Snack snack) {
 		snackDAO.update(snack, id);
-		return "home";
+		return "redirect:/home.do";
 	}
 
 	@PostMapping("deleteSnack.do")

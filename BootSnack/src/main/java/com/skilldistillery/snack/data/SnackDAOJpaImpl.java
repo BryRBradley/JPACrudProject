@@ -36,7 +36,7 @@ public class SnackDAOJpaImpl implements SnackDAO {
 	}
 
 	@Override
-	public String update(Snack updatedSnack, int id) {
+	public Snack update(Snack updatedSnack, int id) {
 
 		Snack foundSnack = em.find(Snack.class, id);
 
@@ -47,7 +47,7 @@ public class SnackDAOJpaImpl implements SnackDAO {
 		foundSnack.setSugar(updatedSnack.getSugar());
 		foundSnack.setPrice(updatedSnack.getPrice());
 
-		return "redirect:/home.do";
+		return foundSnack;
 	}
 
 	@Override

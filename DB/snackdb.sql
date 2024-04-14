@@ -47,7 +47,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `snackdb`;
-INSERT INTO `snack` (`id`, `name`, `calories`, `sugar_grams`, `protein_grams`, `carbs_grams`, `price`) VALUES (1, 'Reeses', 210, 2, NULL, 24, 1.99);
+INSERT INTO `snack` (`id`, `name`, `calories`, `sugar_grams`, `protein_grams`, `carbs_grams`, `price`) VALUES (1, 'Reeses', 210, 2, 5, 24, 1.99);
 INSERT INTO `snack` (`id`, `name`, `calories`, `sugar_grams`, `protein_grams`, `carbs_grams`, `price`) VALUES (2, 'AlmondJoy', 160, 1, 2, 20, 1.99);
 INSERT INTO `snack` (`id`, `name`, `calories`, `sugar_grams`, `protein_grams`, `carbs_grams`, `price`) VALUES (3, 'GummyBears', 100, 16, 2, 23, 3.99);
 INSERT INTO `snack` (`id`, `name`, `calories`, `sugar_grams`, `protein_grams`, `carbs_grams`, `price`) VALUES (4, 'Cheetos', 150, 14, 3, 15, 3.99);

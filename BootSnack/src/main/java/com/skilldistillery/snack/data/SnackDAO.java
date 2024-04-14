@@ -7,7 +7,7 @@ import com.skilldistillery.snack.entities.Snack;
 public interface SnackDAO {
 	Snack findById(int id);
 
-	String update(Snack snack, int id);
+	Snack update(Snack snack, int id);
 
 	List<Snack> findAll();
 

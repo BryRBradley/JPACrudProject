@@ -7,9 +7,9 @@
 <meta charset="UTF-8">
 <title>Snack Management</title>
 <style>
-    body {
+    html {
         font-family: Arial, sans-serif;
-        background-image: url('/BootSnack/images/cool-background.png/image.png');
+        background-image: url('images/cool-background.png');
         background-size: cover;
         background-position: center; 
     }
@@ -59,23 +59,22 @@
 <body>
 
 <div class="container">
-
     <div class="form-container">
         <h2>Update Snack</h2>
         <form action="updateSnack.do?id=${snack.id}" method="post">
-            <input type="hidden" name="id" th:value="${snack.id}"/>
+            <input type="hidden" name="id" value="${snack.id}"/>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" th:value="${snack.name}"/>
+            <input type="text" id="name" name="name" value="${snack.name}"/>
             <label for="calories">Calories:</label>
-            <input type="text" id="calories" name="calories" />
+            <input type="text" id="calories" name="calories" value="${snack.calories}"/>
             <label for="carbs">Carbs:</label>
-            <input type="text" id="carbs" name="carbs" />
+            <input type="text" id="carbs" name="carbs" value="${snack.carbs}"/>
             <label for="protein">Protein:</label>
-            <input type="text" id="protein" name="protein" />
+            <input type="text" id="protein" name="protein" value="${snack.protein}"/>
             <label for="sugar">Sugar:</label>
-            <input type="text" id="sugar" name="sugar" />
+            <input type="text" id="sugar" name="sugar"value="${snack.sugar}" />
             <label for="price">Price:</label>
-            <input type="text" id="price" name="price" />
+            <input type="text" id="price" name="price" value="${snack.price}"/>
             <input type="submit" value= "Update">
         </form>
     </div>
@@ -90,6 +89,8 @@
                 <th>Protein</th>
                 <th>Sugar</th>
                 <th>Price</th>
+                <th>Delete</th>
+                
             </tr>
                
             <tr>
@@ -100,6 +101,15 @@
                 <td>${snack.protein}</td>
                 <td>${snack.sugar}</td>
                 <td>${snack.price}</td>
+                <td><form action="deleteSnack.do" onsubmit="return window.confirm('Are you sure you want to delete this entity?');" method="POST">
+										<div class="form-group">
+											<input type="hidden" class="form-control" id="id" name="id"
+												value="<c:out value='${snack.id}' />">
+										</div>
+										<button type="submit"  class="btn btn-danger">Delete
+											this Snack</button>
+									</form>
+									</td>
             </tr>
     
         </table>

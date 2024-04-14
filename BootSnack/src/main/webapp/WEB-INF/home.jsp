@@ -9,9 +9,9 @@
 <meta charset="UTF-8">
 <title>Snack Management</title>
 <style>
-    body {
+    html {
         font-family: Arial, sans-serif;
-        background-image: url('/BootSnack/images/cool-background.png/image.png');
+        background-image: url('images/cool-background.png');
         background-size: cover; 
         background-position: center; 
     }
@@ -72,16 +72,16 @@
     <div class="form-container">
         <h5>Add a new snack</h5>
         <form action="addSnack.do" method="POST">
-            <input type="hidden" name="id" th:value="${snack.id}"/>
+            <input type="hidden" name="id" value="${snack.id}"/>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" />
+            <input type="text" id="name" name="name" value="${snack.name}"/>
             <label for="calories">Calories:</label>
             <input type="text" id="calories" name="calories" />
-            <label for="sugar_grams">Sugar:</label>
+            <label for="sugar">Sugar:</label>
             <input type="text" id="sugar" name="sugar" />
-            <label for="protein_grams">Protein:</label>
+            <label for="protein">Protein:</label>
             <input type="text" id="protein" name="protein" />
-            <label for="carbs_grams">Carbs:</label>
+            <label for="carbs">Carbs:</label>
             <input type="text" id="carbs" name="carbs" />
             <label for="price">Price:</label>
             <input type="text" id="price" name="price" />
@@ -112,13 +112,14 @@
             </tr>
                    <c:forEach items="${snacks}" var="snack">
             <tr>
-                <td>${snack.id}</td>
+                <td><a href="getSnack.do?id=${snack.id}">${snack.id}</a></td>
                 <td>${snack.name}</td>
                 <td>${snack.calories}</td>
                 <td>${snack.carbs}</td>
                 <td>${snack.protein}</td>
                 <td>${snack.sugar}</td>
                 <td>${snack.price}</td>
+                
             </tr>
         </c:forEach>
         </table>
