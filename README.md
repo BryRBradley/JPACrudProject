@@ -47,9 +47,9 @@ of JPA and Springboot in general. There is a lot that I dont understand and it s
 
 ### Screenshots 
 
-[ScreenShot](/BootSnack/ScreenShot1.png)
-[Screenshot](/BootSnack/ScreenShot2.png)
-(https://raw.githubusercontent.com/<BryRBradley>/<JPACrudProject>/<branchBootSnack>/<.github/ScreenShot1>)
+![ScreenShot](ScreenShot1.png)
+![Screenshot](ScreenShot2.png)
+
 ### Links 
 
 [Project Github repository] (https://github.com/BryRBradley/JPACrudProject)

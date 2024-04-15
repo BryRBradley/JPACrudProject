@@ -1,8 +1,8 @@
 # JPACrudProject
 
 ## Description
-+ This application was built to facilitace UI with my the database I created with SQL Workbench called snackDB. It utilizes Spring boot, JPA and  Gradle +
-+ to interact with the base code and push it to a Tomcat local web server. The application allows a user to: +
+This application was built to facilitace UI with my the database I created with SQL Workbench called snackDB. It utilizes Spring boot, JPA and  Gradle
+to interact with the base code and push it to a Tomcat local web server. The application allows a user to:
 
 - Search Snacks by ID
 - Add a new snack in the database
@@ -36,9 +36,9 @@
 3. Build a really clean looking interface and try to maintan organized code. 
 
 ## Lessons Learned
-@@ I need to review bootstrap procedures to my projects. I tried but couldnt get it to work so I went way old school with CSS and HTML styling within the sheets themselves. @@
-@@ Not the ideal way but it turned out really nice. I had to do so much refactoring due to debugging and getting it all to work. Im addition I need a better understanding @@
-@@ of JPA and Springboot in general. There is a lot that I dont understand and it still seems like magic. I did add background to my pages finally plus the styling. @@
+I need to review bootstrap procedures to my projects. I tried but couldnt get it to work so I went way old school with CSS and HTML styling within the sheets themselves. 
+Not the ideal way but it turned out really nice. I had to do so much refactoring due to debugging and getting it all to work. Im addition I need a better understanding 
+of JPA and Springboot in general. There is a lot that I dont understand and it still seems like magic. I did add background to my pages finally plus the styling. 
 
 ## Coding Time and Testing
 - 12 APR - 1700- 1930 Initial stubbs built out. V1 pushed to GitHub with only the R and D working RUD still needed to be written.
@@ -47,7 +47,7 @@
 
 ### Screenshots 
 
-![Screenshot](ScreenShot1.png)
+![ScreenShot](ScreenShot1.png)
 ![Screenshot](ScreenShot2.png)
 
 ### Links 
