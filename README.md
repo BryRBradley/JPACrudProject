@@ -49,7 +49,8 @@ of JPA and Springboot in general. There is a lot that I dont understand and it s
 
 ![ScreenShot](ScreenShot1.png)
 ![Screenshot](ScreenShot2.png)
-
+![Screenshot](https://github.com/BryRBradley/JPACrudProject/blob/main/BootSnack/src/main/Screenshot1.png)
+![ScreenShot](https://github.com/BryRBradley/JPACrudProject/blob/main/BootSnack/src/main/ScreenShot2.png)
 ### Links 
 
 [Project Github repository] (https://github.com/BryRBradley/JPACrudProject)
